@@ -2,7 +2,8 @@
 
 #Run commands below:
 - git clone {repository}
-- go mod tidy
-- go get . or go mod vendor
-- go run main.go 
-- open localhost:9001
+- docker-compose build
+- docker-compose up -d
+- docker-compose ps
+- docker-compose logs -f {serviceName}
+- application run's http://localhost:8080

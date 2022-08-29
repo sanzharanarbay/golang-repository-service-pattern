@@ -3,7 +3,7 @@ package repositories
 import (
 	"database/sql"
 	"fmt"
-	"github.com/sanzharanarbay/repository-service-pattern/models"
+	"github.com/sanzharanarbay/repository-service-pattern/application/models"
 	"log"
 	"time"
 )

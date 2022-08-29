@@ -1,8 +1,8 @@
 package services
 
 import (
-	"github.com/sanzharanarbay/repository-service-pattern/models"
-	"github.com/sanzharanarbay/repository-service-pattern/repositories"
+	"github.com/sanzharanarbay/repository-service-pattern/application/models"
+	"github.com/sanzharanarbay/repository-service-pattern/application/repositories"
 )
 
 type ItemService struct {

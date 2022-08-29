@@ -3,8 +3,8 @@ package controllers
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"github.com/sanzharanarbay/repository-service-pattern/models"
-	"github.com/sanzharanarbay/repository-service-pattern/services"
+	"github.com/sanzharanarbay/repository-service-pattern/application/models"
+	"github.com/sanzharanarbay/repository-service-pattern/application/services"
 	"net/http"
 	"strconv"
 )

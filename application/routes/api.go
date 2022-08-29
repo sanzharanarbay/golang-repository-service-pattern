@@ -2,10 +2,10 @@ package routes
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/sanzharanarbay/repository-service-pattern/controllers"
-	database "github.com/sanzharanarbay/repository-service-pattern/db"
-	"github.com/sanzharanarbay/repository-service-pattern/repositories"
-	"github.com/sanzharanarbay/repository-service-pattern/services"
+	"github.com/sanzharanarbay/repository-service-pattern/application/controllers"
+	database "github.com/sanzharanarbay/repository-service-pattern/application/db"
+	"github.com/sanzharanarbay/repository-service-pattern/application/repositories"
+	"github.com/sanzharanarbay/repository-service-pattern/application/services"
 )
 
 func ApiRoutes(prefix string, router *gin.Engine) {
