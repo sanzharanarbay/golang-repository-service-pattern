@@ -20,10 +20,10 @@ func NewItemRepository(dbClient *sql.DB) *ItemRepository {
 
 type ItemRepositoryInterface interface {
 	GetItemById(ID int) (*models.Item, error)
-	GetAllItems() ([]*models.Item, error)
+	GetAllItems() (*[]models.Item, error)
 	SaveItem(*models.Item) (bool, error)
 	DeleteItem(ID int) (bool, error)
-	UpdateItem(*models.Item) (bool, error)
+	UpdateItem(item *models.Item, ItemID int) (bool, error)
 }
 
 func (i *ItemRepository) GetItemById(ID int) (*models.Item, error) {
