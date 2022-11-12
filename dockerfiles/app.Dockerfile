@@ -11,10 +11,12 @@ RUN apk update && apk upgrade && \
 
 # prevent the re-installation of vendors at every change in the source code
 COPY ./go.mod go.sum ./
-RUN go mod download && go mod verify && go mod vendor
+RUN go mod download
 
 # Copy and build the app
 COPY . .
+
+RUN go mod tidy && go mod vendor
 
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o main ./cmd/main.go
 
